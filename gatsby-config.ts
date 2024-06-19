@@ -8,21 +8,33 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-emilia-core/gatsby-config.mjs
-    siteTitle: `Emilia`,
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
-    siteHeadline: `Emilia - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://emilia.lekoarts.de`,
-    siteDescription: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI. Includes Light/Dark mode.`,
+    siteTitle: `Josh Yu Photography`,
+    siteTitleAlt: `Josh Yu - Photography Portfolio`,
+    siteHeadline: ``,
+    siteUrl: `https://photos.joshyu.me`,
+    siteDescription: `A photography portfolio from Josh Yu.`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@justjoshyu`,
   },
   trailingSlash: `always`,
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name:	`Josh Yu`,
+        location:	'San Diego, CA',
+        socialMedia: [
+          {
+            title: `Instagram`, 
+            href: `https://instagram.com/justjoshyu`
+          }, { 
+            title: `Homepage`, 
+            href: `https://joshyu.me` 
+          }
+        ]
+      },
     },
     {
       resolve: `gatsby-plugin-sitemap`,
